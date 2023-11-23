@@ -6,26 +6,26 @@
     height: 900px;
     position: relative;
     &_dva {
-        @include wallpaper(url(../../../images/dvabig.jpg))
+        @include wallpaper(url(../images/d`va.webp))
     }
 
     &_kiriko {
-        @include wallpaper(url(../../../images/kirikobig.jpg))
+        @include wallpaper(url(../images/kiriko.webp))
     }
 
     &_sombra {
-        @include wallpaper(url(../../../images/sombra.jpg))
+        @include wallpaper(url(../images/sombra.webp))
     }
 
     &_tracer {
-        @include wallpaper(url(../../../images/traycer.jpg))
+        @include wallpaper(url(../images/traycer.webp))
     }
 
     &_brigitte {
-        @include wallpaper(url(../../../images/brigitte.jpg))
+        @include wallpaper(url(../images/brigitte.webp))
     }
     &_secret{
-        @include wallpaper(url(../../../images/vo.gif));
+        @include wallpaper(url(../images/vo.gif));
         background-repeat: repeat;
     }
 }

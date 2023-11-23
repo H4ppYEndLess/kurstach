@@ -80,7 +80,7 @@ header{
     &_close{
         position: fixed;
         top: 25px;
-        right: 25px;            
+        right: 35px;            
     }
     &_opened{
         &::before{
@@ -99,9 +99,6 @@ header{
         }             
     }
 }
-@media (max-width:600px){
-
-}
 
 @media (max-width:600px){
     nav{
@@ -113,5 +110,15 @@ header{
     .logo__logo svg{
         padding: 5px 0;
         height: 50px;
+    }
+}
+
+@media (max-width:360px){
+    .burger{
+        width: 30px;
+        height: 30px;
+        &_close{
+            right: 20px;
+        }
     }
 }

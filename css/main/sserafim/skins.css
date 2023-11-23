@@ -4,7 +4,7 @@
 	position: relative;
 }
 .wallpaper_dva {
-	background-image: url(../../../images/dvabig.jpg);
+	background-image: url(../images/d`va.webp);
 	width: 100%;
 	height: 100%;
 	background-position: center;
@@ -13,7 +13,7 @@
 	position: absolute;
 }
 .wallpaper_kiriko {
-	background-image: url(../../../images/kirikobig.jpg);
+	background-image: url(../images/kiriko.webp);
 	width: 100%;
 	height: 100%;
 	background-position: center;
@@ -22,7 +22,7 @@
 	position: absolute;
 }
 .wallpaper_sombra {
-	background-image: url(../../../images/sombra.jpg);
+	background-image: url(../images/sombra.webp);
 	width: 100%;
 	height: 100%;
 	background-position: center;
@@ -31,7 +31,7 @@
 	position: absolute;
 }
 .wallpaper_tracer {
-	background-image: url(../../../images/traycer.jpg);
+	background-image: url(../images/traycer.webp);
 	width: 100%;
 	height: 100%;
 	background-position: center;
@@ -40,7 +40,7 @@
 	position: absolute;
 }
 .wallpaper_brigitte {
-	background-image: url(../../../images/brigitte.jpg);
+	background-image: url(../images/brigitte.webp);
 	width: 100%;
 	height: 100%;
 	background-position: center;
@@ -49,7 +49,7 @@
 	position: absolute;
 }
 .wallpaper_secret {
-	background-image: url(../../../images/vo.gif);
+	background-image: url(../images/vo.gif);
 	width: 100%;
 	height: 100%;
 	background-position: center;
