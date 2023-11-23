@@ -13,6 +13,9 @@
     </head>
     <body>
         <header>
+            <div class="burger burger_close" open-menu>
+                <span></span>
+            </div>
             <div class="container_header">
                 <a href="index.html">
                     <ul class="logo">
@@ -50,6 +53,33 @@
                 </nav>
         </header>
         <main>
+            <div class="section_menu" menu>
+                <div class="menu">
+                    <ul class="menu__logo">
+                        <li class="menu__log">
+                            <svg class="menu__bliz" width="100px" height="100px">
+                                <use href="./images/svg/icons.svg#logo"/>
+                            </svg>
+                        </li>
+                        <li class="menu__text">
+                            <svg class="menu__bliz" height="30px" width="100%">
+                                <use href="./images/svg/icons.svg#logo-text"/>
+                            </svg>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__link active"><a href="index.html">Головна</a></li>
+                        <li class="menu__link"><a href="#">новини</a></li>
+                        <li class="menu__link"><a href="#">сезон</a></li>
+                        <li class="menu__link"><a href="heroes.html">герої</a></li>
+                    </ul>
+                    <a href="#">
+                        <svg class="menu__bliz" width="80%">
+                            <use href="./images/svg/icons.svg#blizz"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <svg class="modal__exit" width="30px" height="30px" data-modal-close>
@@ -291,5 +321,6 @@
         <script src="./js/swiper.js"></script>  
         <script src="./js/skins.js"></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

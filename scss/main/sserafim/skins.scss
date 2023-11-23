@@ -6,26 +6,27 @@
     height: 900px;
     position: relative;
     &_dva {
-        @include wallpaper(url(../../../images/d`va.webp))
+        @include wallpaper(url(../../../images/dvabig.jpg))
     }
 
     &_kiriko {
-        @include wallpaper(url(../../../images/kiriko.webp))
+        @include wallpaper(url(../../../images/kirikobig.jpg))
     }
 
     &_sombra {
-        @include wallpaper(url(../../../images/sombra.webp))
+        @include wallpaper(url(../../../images/sombra.jpg))
     }
 
     &_tracer {
-        @include wallpaper(url(../../../images/traycer.webp))
+        @include wallpaper(url(../../../images/traycer.jpg))
     }
 
     &_brigitte {
-        @include wallpaper(url(../../../images/brigitte.webp))
+        @include wallpaper(url(../../../images/brigitte.jpg))
     }
     &_secret{
-        @include wallpaper(url(../../../images/vo.gif))
+        @include wallpaper(url(../../../images/vo.gif));
+        background-repeat: repeat;
     }
 }
 .boob{

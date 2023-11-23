@@ -45,18 +45,8 @@ header{
 
 }
 
-@media (max-width:600px){
-    nav{
-        display: none;
-    }
-    .logo__logo svg{
-        padding: 5px 0;
-        height: 50px;
-    }
-}
-
 .burger{
-    display: block !important;
+    display: none;
     position: relative;
     width: 40px;
     height: 30px;
@@ -90,7 +80,7 @@ header{
     &_close{
         position: fixed;
         top: 25px;
-        right: 40px;            
+        right: 25px;            
     }
     &_opened{
         &::before{
@@ -107,5 +97,21 @@ header{
             transform: scale(0);
             
         }             
+    }
+}
+@media (max-width:600px){
+
+}
+
+@media (max-width:600px){
+    nav{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .logo__logo svg{
+        padding: 5px 0;
+        height: 50px;
     }
 }
