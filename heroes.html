@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Heroes</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modern-normalize.css">
+        <link rel="icon" href="./images/logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <div class="burger burger_close" open-menu>
+                <span></span>
+            </div>
+            <div class="container_header">
+                <a href="index.html">
+                    <ul class="logo">
+                        <li class="logo__logo">
+                            <svg width="53px" height="53px">
+                                <use href="./images/svg/icons.svg#logo"></use>
+                            </svg>
+                        </li>
+                        <li class="logo__text">
+                            <svg height="15px" width="137px">
+                                <use href="./images/svg/icons.svg#logo-text"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </a>
+                <nav>
+                    <ul class="navigation">
+                        <li class="navigation__item">
+                            <a href="index.html">
+                                головна
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            новини
+                        </li>
+                        <li class="navigation__item">
+                            сезон
+                        </li>
+                        <li class="navigation__item">
+                            <a href="heroes.html">
+                                герої
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <div class="section_menu" menu>
+                <div class="menu">
+                    <ul class="menu__logo">
+                        <li class="menu__log">
+                            <svg class="menu__bliz" width="100px" height="100px">
+                                <use href="./images/svg/icons.svg#logo"/>
+                            </svg>
+                        </li>
+                        <li class="menu__text">
+                            <svg class="menu__bliz" height="30px" width="100%">
+                                <use href="./images/svg/icons.svg#logo-text"/>
+                            </svg>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__link active"><a href="index.html">Головна</a></li>
+                        <li class="menu__link"><a href="#">новини</a></li>
+                        <li class="menu__link"><a href="#">сезон</a></li>
+                        <li class="menu__link"><a href="heroes.html">герої</a></li>
+                    </ul>
+                    <a href="#">
+                        <svg class="menu__bliz" width="80%">
+                            <use href="./images/svg/icons.svg#blizz"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <section class="section_hero_heroes">
+                <div class="container_hero">
+                    <h1 class="title_hero">
+                        Герої
+                    </h1>
+                    <h2>
+                        У Overwatch ви знайдете безліч яскравих героїв із різних країн, у кожного з яких є своя історія. Познайомтеся з героями Overwatch!
+                    </h2>
+                </div>
+            </section>
+            <section class="section" style="margin-bottom: 50px;">
+                <div class="container" style="border-radius: 10px 10px 0 0 ; padding: 0;">
+                    <ul class="nav">
+                        <li class="nav__filter f nav__filter_active" data-f="all">
+                            всі
+                        </li>
+                        <li class="nav__filter f"  data-f="tank">
+                            <svg class="nav__icon" width="42px" height="42px">
+                                <use href="./images/svg/icons.svg#tank"/>
+                            </svg>
+                            танки
+                        </li>
+                        <li class="nav__filter f"  data-f="dd">
+                            <svg class="nav__icon" width="42px" height="42px">
+                                <use href="./images/svg/icons.svg#dd"/>
+                            </svg>
+                            ДД
+                        </li>
+                        <li class="nav__filter f"  data-f="sup">
+                            <svg class="nav__icon" width="42px" height="42px">
+                                <use href="./images/svg/icons.svg#sup"/>
+                            </svg>
+                            Сапорти
+                        </li>
+                    </ul>
+                </div>
+                <div class="container" style="border-radius: 0 0 10px 10px; gap: 50px;">
+                        <div class="hero-card dd">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/sombra-card.png" alt="Сомбра" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#dd"/>
+                                    </svg>
+                                    <p>
+                                        сомбра
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-card dd">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/tracer.png" alt="трейсер" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#dd"/>
+                                    </svg>
+                                    <p>
+                                        Трейсер
+                                    </p>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="hero-card tank">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/homa.jpg" alt="хомяк їбаний" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#tank"/>
+                                    </svg>
+                                    <p>
+                                        хомяк їбаний
+                                    </p>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="hero-card sup">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/kira.jpg" alt="Кіріко" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#sup"/>
+                                    </svg>
+                                    <p>
+                                        кіріко
+                                    </p>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="hero-card dd">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/widow-card.jpg" alt="чорна вдова" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#dd"/>
+                                    </svg>
+                                    <p>
+                                        чорна вдова
+                                    </p>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="hero-card sup">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/illari.png" alt="Ілларі" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#sup"/>
+                                    </svg>
+                                    <p>
+                                        Ілларі
+                                    </p>
+                                </div>
+                            </a>
+                        </div>                    
+                        <div class="hero-card tank">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/dva.jpg" alt="D`va" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#tank"/>
+                                    </svg>
+                                    <p>
+                                        D`va
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-card dd">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/ashe.jpg" alt="Еш" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#dd"/>
+                                    </svg>
+                                    <p>
+                                        Еш
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-card sup">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/mercy.jpeg" alt="Ангел" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#sup"/>
+                                    </svg>
+                                    <p>
+                                        Ангел
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="hero-card tank">
+                            <a href="#">
+                                <div class="hero-card__image">
+                                    <img src="./images/wins.jpeg" alt="макака" height="300px">
+                                </div>
+                                <div class="hero-card__bottom">
+                                    <svg class="hero-card__icon" width="42px" height="42px">
+                                        <use href="./images/svg/icons.svg#tank"/>
+                                    </svg>
+                                    <p>
+                                        Макака
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="logo_blizzard">
+                <a href="#">
+                    <svg width="237px" height="131px">
+                        <use  href="./images/svg/icons.svg#blizz"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="connection">
+                <h2 class="title_footer">
+                    Будемо на зв’язку
+                </h2>
+                <ul class="socials">
+                    <li class="socials__item">
+                        <a href="#">
+                            <svg class="socials__icon" width="80px" height="80px">
+                                <use  href="./images/svg/icons.svg#X"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#">
+                            <svg class="socials__icon" width="80px" height="80px">
+                                <use  href="./images/svg/icons.svg#yt"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#">
+                            <svg class="socials__icon" width="80px" height="80px">
+                                <use  href="./images/svg/icons.svg#ds"></use>
+                            </svg>
+                        </a>
+                    </li>
+            </div>
+            <div class="maling">
+                <h2 class="title_footer">отримуйте новини першими</h2>
+                <div class="subscription">
+                    <form class="subscription__form">
+                        <input type="email" class="subscription__input" placeholder="email" required>
+                        <button type="submit" class="button_footer">
+                            Підписатися
+                        </button>
+                    </form>
+                </div>
+            </div>            
+        </footer>
+        <script src="./js/filter.js"></script>
+        <script src="./js/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+@import './variebles.scss';
+@import './mixin.scss';
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: -8px;
+    gap: 10px;
+    &__text {
+        margin-top: -10px;
+    }
+    &_blizzard{
+        cursor: pointer;
+        position: relative;
+        &:hover::before{
+            content: "";
+            position: absolute;
+            bottom: 0px;         
+            left: 0px;
+            width: 100%;
+            height: 3px;
+            border-radius: 2px;
+            background-color: $background-color;
+        }
+    }
+}
+.navigation {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+    &__item {
+        padding: 15px 0 15px 0;
+        &:hover{
+            color: $main-color;
+            transition: 250ms;
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+    }
+}
+@media (max-width:1200px){
+    .logo{
+        gap: 5px;
+    }
+    .navigation{
+        gap: 40px;
+    }
+    .container_header{
+        padding: 0 40px;
+    }
+}
+
+@media (max-width:750px){
+    .logo{
+        gap: 5px;
+    }
+    .navigation{
+        gap: 40px;
+    }
+    .container_header{
+        justify-content: center;
+        padding: 0 40px;
+        & nav{
+            margin:  0 auto;
+        }
+    }
+}
+
