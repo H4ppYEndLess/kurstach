@@ -124,6 +124,7 @@
     .swiper{
         &-pagination{
             gap: 10px;
+            flex-wrap: wrap;
             &-bullet{
                 width: 60px !important;
                 height: 60px !important;
@@ -180,10 +181,5 @@
 @media (max-width:480px){
     .slider{
         max-width: 250px;
-    }
-    .swiper{
-        &-pagination{
-            flex-wrap: wrap;
-        }
     }
 }

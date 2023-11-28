@@ -45,3 +45,7 @@
     cursor: pointer;
     border: 2px solid $main-color;
 }
+
+@mixin media($max-width){
+    @media(max-width:$max-width){@content}
+}
