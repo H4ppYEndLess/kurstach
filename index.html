@@ -80,56 +80,6 @@
                     </a>
                 </div>
             </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <svg class="modal__exit" width="30px" height="30px" data-modal-close>
-                        <use  href="./images/svg/icons.svg#exit"></use>
-                    </svg>
-                    <h2 class="modal__title">
-                        введіть свої дані  
-                    </h2>
-                    <form action="modal__form">
-                        <ul>
-                            <li class="modal__item">
-                                <label class="modal__label">
-                                    <p>
-                                        введіть віш нікнейм
-                                    </p>
-                                    <input type="text" class="modal__input">
-                                </label>
-                            </li>
-                            <li class="modal__item">
-                                <label class="modal__label">
-                                    <p>
-                                        придумайте пароль
-                                    </p>
-                                    <input type="password" class="modal__input">
-                                </label>
-                            </li>
-                            <li class="modal__item">
-                                <label class="modal__label">
-                                    <p>
-                                        вкажіть вашу пошту
-                                    </p>
-                                    <input type="email" class="modal__input">
-                                </label>
-                            </li>
-                            <li class="modal__item">
-                                <label class="modal__label">                                    
-                                    <input type="checkbox" class="modal__checkbox"/>
-                                    <p>
-                                        Погоджуюся з розсилкою та приймаю <a href="https://youtu.be/OSWszdSHkyE?si=xXiqsn1xtBArDeT9">Умови договору</a>
-                                    </p>
-                                </label>
-                            </li>
-                            <li class="modal__item">
-                                <button type="submit" class="button_modal">Відправити</button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-
-            </div>
             <section class="section_hero">
                 <div class="container_hero">
                     <h1 class="title_hero">
@@ -308,19 +258,69 @@
             <div class="maling">
                 <h2 class="title_footer">отримуйте новини першими</h2>
                 <div class="subscription">
-                    <form class="subscription__form">
-                        <input type="email" class="subscription__input" placeholder="email" required>
-                        <button type="submit" class="button_footer">
+                    <form class="subscription__form" method="POST">
+                        <input type="text" id="footer__email" name="footer__email" class="subscription__input" placeholder="email" required>
+                        <button class="button_footer" onclick="sendMessage(hello)">
                             Підписатися
                         </button>
                     </form>
                 </div>
             </div>            
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <svg class="modal__exit" width="30px" height="30px" data-modal-close>
+                    <use  href="./images/svg/icons.svg#exit"></use>
+                </svg>
+                <h2 class="modal__title">
+                    введіть свої дані  
+                </h2>
+                <form action="modal__form">
+                    <ul>
+                        <li class="modal__item">
+                            <label class="modal__label">
+                                <p>
+                                    введіть віш нікнейм
+                                </p>
+                                <input type="text" class="modal__input">
+                            </label>
+                        </li>
+                        <li class="modal__item">
+                            <label class="modal__label">
+                                <p>
+                                    придумайте пароль
+                                </p>
+                                <input type="password" class="modal__input">
+                            </label>
+                        </li>
+                        <li class="modal__item">
+                            <label class="modal__label">
+                                <p>
+                                    вкажіть вашу пошту
+                                </p>
+                                <input type="email" class="modal__input">
+                            </label>
+                        </li>
+                        <li class="modal__item">
+                            <label class="modal__label">                                    
+                                <input type="checkbox" class="modal__checkbox"/>
+                                <p>
+                                    Погоджуюся з розсилкою та приймаю <a href="https://youtu.be/OSWszdSHkyE?si=xXiqsn1xtBArDeT9">Умови договору</a>
+                                </p>
+                            </label>
+                        </li>
+                        <li class="modal__item">
+                            <button type="submit" class="button_modal">Відправити</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/swiper.js"></script>  
         <script src="./js/skins.js"></script>
         <script src="./js/modal.js"></script>
         <script src="./js/menu.js"></script>
+        <script src="./js/mail.js"></script>
     </body>
 </html>
