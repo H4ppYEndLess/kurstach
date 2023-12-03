@@ -93,6 +93,9 @@
 	height: 100px !important;
 	background-color: #2e618f !important;
 }
+.swiper-pagination-bullet:hover, .swiper-pagination-bullet:focus {
+	background-color: rgba(237, 101, 22, 0.7) !important;
+}
 .swiper-pagination-bullet-active {
 	background-color: #ed6516 !important;
 }

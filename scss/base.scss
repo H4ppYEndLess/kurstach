@@ -7,7 +7,9 @@ body{
     font-weight: 400;
     background-color: $background-color;
 }
-
+html{
+    scroll-behavior: smooth
+}
 .rel{
     position: relative;
 }
@@ -18,7 +20,7 @@ body{
 }
 
 .container {
-    @include container(1440px, 50px 30px 50px 30px, white, 10px);
+    @include container(1440px, 0 30px 0 30px, white, 10px);
     justify-content: center;
     &_header {
         @include container(90%, 0 80px 0 80px, rgba(255, 255, 255, 0.7), 10px);
@@ -76,7 +78,7 @@ body{
 }
 
 .section {
-    margin: 50px 80px 0 80px;
+    padding: 50px 0;
     &_hero{
         width: 100%;
         background-color: $complementary-color;
@@ -116,7 +118,7 @@ body{
     }
 
     &_player {
-        margin: 50px auto;
+        margin: auto;
         max-width: 720px;
         text-align: center;
         & span{

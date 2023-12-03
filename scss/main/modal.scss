@@ -67,7 +67,7 @@
             }
         }
         &__exit{
-            fill: black;
+            fill: $complementary-color;
             position: absolute;
             top: 10px;
             right: 10px;
@@ -102,24 +102,86 @@
             width: 100%;
             font-size: 32px;
             padding: 5px 15px;
+            font-size: 32px;
+            font-family: over, sans-serif;
             &:focus,
             &:hover{
                 border: 1px solid $soft-blue;
                 outline: none;
             }
 		}
-        &__checkbox{
-            width: 30px;
-            height: 30px;
-            border-radius: 30px;
-            border: 1px solid $soft-blue;
-            display: inline-block;
-            &:checked{
-                background-color: $main-color;
+        &__check {
+            display: flex;
+            cursor: pointer;
+            position: relative;
+            margin: auto;
+            width: 100%;
+            -webkit-tap-highlight-color: transparent;
+            transform: translate3d(0, 0, 0);
+            align-items: baseline;
+            & svg{
+                position: relative;
+                z-index: 1;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke: $complementary-color;
+                stroke-width: 1.5;
+                transform: translate3d(0, 0, 0);
+                transition: all 0.2s ease;
+                margin-left: 12px;
+                margin-right: 12px;
+                width: 25px;
+                height: 25px;
+                @media (max-width:768px){
+                    margin-left: 0;
+                }
             }
-            
-        }
+            & svg path{
+                stroke-dasharray: 60;
+                stroke-dashoffset: 0;
+            }
+            & svg polyline{
+                stroke-dasharray: 22;
+                stroke-dashoffset: 66;
+            }
+            &:hover::before{
+                opacity: 1;
+            }
+            &:hover svg{
+                stroke: $main-color;
+            }
+		}
 
 		&__exit-button {
 		}
 }
+
+#cbx:checked + .modal__check svg {
+    stroke: $main-color;
+}
+
+#cbx:checked + .modal__check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#cbx:checked + .modal__check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+#cbx:checked + .check svg {
+    stroke: $main-color;
+  }
+  
+  #cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+  }
+  
+  #cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+  }

@@ -76,7 +76,11 @@
             padding: 20px !important; 
             width: 100px !important;
             height: 100px !important;
-            background-color: rgba($soft-blue, 1) !important;   
+            background-color: rgba($soft-blue, 1) !important;
+            &:hover,
+            &:focus{
+                background-color: rgba($main-color, 0.7) !important;
+            }   
             &-active{
                 background-color: rgba($main-color, 1.0) !important;   
             } 

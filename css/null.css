@@ -43,6 +43,10 @@ a {
 	color: inherit;
 }
 
+p, h2 {
+	margin: 0;
+}
+
 button, select, textarea {
 	background: none;
 	border: none;

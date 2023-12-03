@@ -4,6 +4,13 @@
     @include container(1440px, 0,none,0);
     gap:50px;
 }
+.heroes{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
 .hero-card {
     background-color: white;
     box-shadow: 0px 5px 2px 0px rgba($soft-blue, 0.25);
