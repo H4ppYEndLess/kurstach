@@ -13,9 +13,36 @@
     </head>
     <body>
         <header>
-            <div class="burger burger_close" open-menu>
-                <span></span>
+            <div class="section_menu" menu>
+                <div class="menu">
+                    <ul class="menu__logo">
+                        <li class="menu__log">
+                            <svg class="menu__bliz" width="100px" height="100px">
+                                <use href="./images/svg/icons.svg#logo"/>
+                            </svg>
+                        </li>
+                        <li class="menu__text">
+                            <svg class="menu__bliz" height="30px" width="100%">
+                                <use href="./images/svg/icons.svg#logo-text"/>
+                            </svg>
+                        </li>
+                    </ul>
+                    <ul class="menu__list">
+                        <li class="menu__link active"><a href="index.html">Головна</a></li>
+                        <li class="menu__link"><a href="#">новини</a></li>
+                        <li class="menu__link"><a href="#">сезон</a></li>
+                        <li class="menu__link"><a href="heroes.html">герої</a></li>
+                    </ul>
+                    <a href="#">
+                        <svg class="menu__bliz" width="80%">
+                            <use href="./images/svg/icons.svg#blizz"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
+            <button type="button" class="burger burger_close" open-menu>
+                <span></span>
+            </button>
             <div class="container_header">
                 <a href="index.html">
                     <ul class="logo">
@@ -52,34 +79,8 @@
                         </li>
                     </ul>
                 </nav>
+                
         </header>
-        <div class="section_menu" menu>
-            <div class="menu">
-                <ul class="menu__logo">
-                    <li class="menu__log">
-                        <svg class="menu__bliz" width="100px" height="100px">
-                            <use href="./images/svg/icons.svg#logo"/>
-                        </svg>
-                    </li>
-                    <li class="menu__text">
-                        <svg class="menu__bliz" height="30px" width="100%">
-                            <use href="./images/svg/icons.svg#logo-text"/>
-                        </svg>
-                    </li>
-                </ul>
-                <ul class="menu__list">
-                    <li class="menu__link active"><a href="index.html">Головна</a></li>
-                    <li class="menu__link"><a href="#">новини</a></li>
-                    <li class="menu__link"><a href="#">сезон</a></li>
-                    <li class="menu__link"><a href="heroes.html">герої</a></li>
-                </ul>
-                <a href="#">
-                    <svg class="menu__bliz" width="80%">
-                        <use href="./images/svg/icons.svg#blizz"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
         <main>
             <section class="section_hero">
                 <div class="container_hero">
@@ -99,63 +100,57 @@
                         <p class="content_battlefield">
                             Боріться за майбутнє в найрізноманітніших куточках світу. На кожному з полів бою - від сповненого високотехнологічних чудес Пусана до засніжених вулиць Торонто - на вас чекають завдання, таємниці та стратегічні можливості.
                         </p>
-                        <div class="rel">
-                            <div class="slider__prev">
-                                <svg width="60px" height="60px">
-                                    <use  href="./images/svg/icons.svg#prev"></use>
-                                </svg>
-                            </div>
-                            <div class="slider__next">
-                                <svg  width="60px" height="60px">
-                                    <use  href="./images/svg/icons.svg#next"></use>
-                                </svg>
-                            </div>
+                        
                                 <div class="swiper-pagination">
                                 </div>
                             <div class="swiper slider">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
                                 <div class="swiper-wrapper slider__wrapper">                   
-                                    <div class="swiper-slide slider__slide"><img src="./images/Push.webp" alt="Натиск" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Push.webp" alt="Натиск" height="auto" width="100%">
                                         <h2 class="slider__title">Натиск</h2>
                                         <p class="slidet__text">Команди борються за контроль над роботом і намагаються провести його до бази противника.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Control.webp" alt="Контроль об'єкта" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Control.webp" alt="Контроль об'єкта" height="auto" width="100%">
                                         <h2 class="slider__title">контроль об'єкта</h2>
                                         <p class="slidet__text">Команди намагаються захопити об'єкт. У матчі перемагає та команда, яка візьме гору у двох раундах.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Escort.webp" alt="Супровід" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Escort.webp" alt="Супровід" height="auto" width="100%">
                                         <h2 class="slider__title">супровід</h2>
                                         <p class="slidet__text">Одна команда супроводжує вантаж до пункту призначення, а друга намагається їй перешкодити.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Hybrid.webp" alt="Гібридний" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Hybrid.webp" alt="Гібридний" height="auto" width="100%">
                                         <h2 class="slider__title">гібридний</h2>
                                         <p class="slidet__text">Команда, що атакує, захоплює вантаж, а потім намагається доставити його в пункт призначення. Команда, що обороняється, повинна перешкодити їй це зробити.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Flag.webp" alt="Захоплення прапору" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Flag.webp" alt="Захоплення прапору" height="auto" width="100%">
                                         <h2 class="slider__title">захоплення прапору</h2>
                                         <p class="slidet__text">Команди змагаються, щоб захопити ворожий прапор і захистити свій.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Elimination.webp" alt="Ліквідація" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Elimination.webp" alt="Ліквідація" height="auto" width="100%">
                                         <h2 class="slider__title">ліквідація</h2>
                                         <p class="slidet__text">Усуньте всіх супротивників, щоб узяти гору в раунді. Ви виграєте, перемігши в трьох раундах, брати участь у боях можуть команди з одного, трьох і шести гравців.</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/Deathmatch.webp" alt="Сутичка" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/Deathmatch.webp" alt="Сутичка" height="auto" width="100%">
                                         <h2 class="slider__title">сутичка</h2>
                                         <p class="slidet__text">Вбивайте супротивників і наберіть 20 очок у режимі "всі проти всіх".</p>
                                     </div>
-                                    <div class="swiper-slide slider__slide"><img src="./images/TDM.webp" alt="ТДМ" height="630px" width="100%">
+                                    <div class="swiper-slide slider__slide"><img src="./images/TDM.webp" alt="ТДМ" height="auto" width="100%">
                                         <h2 class="slider__title">командна сутичка</h2>
                                         <p class="slidet__text">Дійте злагоджено і обіграйте команду супротивника, зробивши більше вбивств.</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
             <section class="section" id="seson">
                 <div class="container">
                     <div class="sserafim_first">
-                        <iframe class="sserafim__player_first .youtube" width="560" height="315" src="https://www.youtube.com/embed/zryDEYgjkjw?si=-lHOipcJ1458Qudn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="sserafim__player_first">
+                            <iframe class="youtube video" width="560" height="315" src="https://www.youtube.com/embed/zryDEYgjkjw?si=-lHOipcJ1458Qudn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
                         <div class="sserafim__content">
                             <h2 class="title">
                                 ВНУТРІШНЬОІГРОВА ПОДІЯ LE SSERAFIM
@@ -170,8 +165,8 @@
                             Дивіться  анімаційне  музичне відео
                             <span>overwatch2</span> x <span> le sserafim</span><br>
                             прямо зараз
-                        </h2>
-                        <iframe class="sserafim__player_second .youtube" width="560" height="315" src="https://www.youtube.com/embed/hLvWy2b857I?si=L8RlhehtR5FUpZsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </h2>   
+                            <iframe class="youtube video sserafim__player_second" width="560" height="315" src="https://www.youtube.com/embed/hLvWy2b857I?si=L8RlhehtR5FUpZsm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -255,18 +250,7 @@
                             </svg>
                         </a>
                     </li>
-            </div>
-            <div class="maling">
-                <h2 class="title_footer">отримуйте новини першими</h2>
-                <div class="subscription">
-                    <form class="subscription__form" method="POST">
-                        <input type="text" id="footer__email" name="footer__email" class="subscription__input" placeholder="email" required>
-                        <button class="button_footer" onclick="sendMessage(hello)">
-                            Підписатися
-                        </button>
-                    </form>
-                </div>
-            </div>            
+            </div>          
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
@@ -276,14 +260,14 @@
                 <h2 class="modal__title">
                     введіть свої дані  
                 </h2>
-                <form action="modal__form">
+                <form id="subscribe">
                     <ul>
                         <li class="modal__item">
                             <label class="modal__label">
                                 <p>
                                     введіть віш нікнейм
                                 </p>
-                                <input type="text" class="modal__input">
+                                <input type="text" class="modal__input" id="name">
                             </label>
                         </li>
                         <li class="modal__item">
@@ -291,7 +275,7 @@
                                 <p>
                                     придумайте пароль
                                 </p>
-                                <input type="password" class="modal__input">
+                                <input type="password" class="modal__input" id="password">
                             </label>
                         </li>
                         <li class="modal__item">
@@ -299,7 +283,7 @@
                                 <p>
                                     вкажіть вашу пошту
                                 </p>
-                                <input type="email" class="modal__input">
+                                <input type="email" class="modal__input" id="email">
                             </label>
                         </li>
                         <li class="modal__li_checkbox"> 
@@ -309,7 +293,7 @@
                                 <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
                                 <polyline points="1 9 7 14 15 4"></polyline>
                               </svg>
-                              <span class="modal__span-text">Погоджуюся з розсилкою та приймаю <a href="https://legal.ubi.com/privacypolicy/en-INTL" class="modal__span">Умови договору</a></span>
+                              <span class="modal__span-text">Погоджуюся з розсилкою</span>
                             </label>
                           </li>
                         <li class="modal__item">

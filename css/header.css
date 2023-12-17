@@ -37,6 +37,8 @@
 	margin: 0 auto;
 }
 .navigation__item {
+	-webkit-transition: 250ms ease-in;
+	transition: 250ms ease-in;
 	padding: 15px 0 15px 0;
 }
 .navigation__item:hover {

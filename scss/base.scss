@@ -20,7 +20,7 @@ html{
 }
 
 .container {
-    @include container(1440px, 0 30px 0 30px, white, 10px);
+    @include container(90%, 0 30px 0 30px, white, 10px);
     justify-content: center;
     &_header {
         @include container(90%, 0 80px 0 80px, rgba(255, 255, 255, 0.7), 10px);
@@ -37,7 +37,6 @@ html{
     }
     &_hero{
         max-width: 850px;
-        margin: auto;
     }
 }
 
@@ -76,10 +75,28 @@ html{
         @include button(0 10px 0 5px,$main-color, white,5px);
     }
 }
-
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
+.youtube{
+    margin:0 auto;
+}
 .section {
     padding: 50px 0;
+    @media (max-width:1200px){
+            &_hero{
+                background-position: right;
+                &_heroes{
+                    background-position:75%;
+                }
+            }
+        
+    }
     &_hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         background-color: $complementary-color;
         text-align: center;
@@ -91,6 +108,9 @@ html{
         height:100vh;
         color:white;
         &_heroes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             background-color: $complementary-color;
             text-align: center;
@@ -109,6 +129,16 @@ html{
     margin-bottom: 50px;
     font-size: 64px;
     letter-spacing: 7.68px;
+    @media (max-width:1200px){
+        font-size: 32px;
+    }
+    @media (max-width:850px){
+        margin-bottom: 20px;
+    }
+    @media (max-width:380px){
+        text-align: center;
+        font-size: 24px;
+    }
     &_hero {
         color: white;
         font-size: 72px;
@@ -150,19 +180,6 @@ font-family: "over";
 src: url("../font/bignoodletoooblique.ttf")format("woff2"); 
 }
 
-@media (max-width:1200px){
-    .title{
-        font-size: 32px;
-    }
-    .section{
-        &_hero{
-            background-position: right;
-            &_heroes{
-                background-position:75%;
-            }
-        }
-    }
-}
 @media (max-width:800px){
     h2{
         font-size: 32px;
@@ -171,9 +188,6 @@ src: url("../font/bignoodletoooblique.ttf")format("woff2");
         &_hero{
             font-size: 48px;
         }
-    }
-    .section{
-        margin: 20px 40px 0 40px;
     }
     .title{
         margin-bottom: 20px;

@@ -10,12 +10,7 @@
 .content_battlefield {
 	max-width: 1000px;
 }
-
 @media (max-width: 1200px) {
-	.content {
-		font-size: 28px;
-		letter-spacing: normal;
-	}
 	.content_battlefield {
 		font-size: 28px;
 		letter-spacing: normal;
@@ -24,6 +19,12 @@
 @media (max-width: 420px) {
 	.content_battlefield {
 		font-size: 22px;
+		letter-spacing: normal;
+	}
+}
+@media (max-width: 1200px) {
+	.content {
+		font-size: 28px;
 		letter-spacing: normal;
 	}
 }

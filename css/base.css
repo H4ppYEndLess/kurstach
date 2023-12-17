@@ -32,7 +32,7 @@ html {
 	    flex-wrap: wrap;
 	padding: 0 30px 0 30px;
 	margin: 0 auto;
-	max-width: 1440px;
+	max-width: 90%;
 	background-color: white;
 	border-radius: 10px;
 	-webkit-box-pack: center;
@@ -66,7 +66,6 @@ html {
 }
 .container_hero {
 	max-width: 850px;
-	margin: auto;
 }
 
 .button_modal {
@@ -88,7 +87,7 @@ html {
 	font-size: 64px;
 }
 .button_hero:hover, .button_hero:focus {
-	background-color: rgb(221, 94, 21);
+	background-color: rgb(177, 75, 16);
 }
 .button_skins {
 	background-color: #ED6516;
@@ -108,7 +107,7 @@ html {
 	}
 }
 .button_skins:hover {
-	background-color: rgb(221, 94, 21);
+	background-color: rgb(177, 75, 16);
 }
 .button_footer {
 	background-color: #ED6516;
@@ -119,10 +118,36 @@ html {
 	transition: 250ms ease-in;
 }
 
+iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.youtube {
+	margin: 0 auto;
+}
+
 .section {
 	padding: 50px 0;
 }
+@media (max-width: 1200px) {
+	.section_hero {
+		background-position: right;
+	}
+	.section_hero_heroes {
+		background-position: 75%;
+	}
+}
 .section_hero {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100%;
 	background-color: #333E48;
 	text-align: center;
@@ -136,6 +161,15 @@ html {
 	color: white;
 }
 .section_hero_heroes {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	width: 100%;
 	background-color: #333E48;
 	text-align: center;
@@ -154,6 +188,22 @@ html {
 	margin-bottom: 50px;
 	font-size: 64px;
 	letter-spacing: 7.68px;
+}
+@media (max-width: 1200px) {
+	.title {
+		font-size: 32px;
+	}
+}
+@media (max-width: 850px) {
+	.title {
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 380px) {
+	.title {
+		text-align: center;
+		font-size: 24px;
+	}
 }
 .title_hero {
 	color: white;
@@ -190,26 +240,12 @@ html {
 	font-family: "over";
 	src: url("../font/bignoodletoooblique.ttf") format("woff2");
 }
-@media (max-width: 1200px) {
-	.title {
-		font-size: 32px;
-	}
-	.section_hero {
-		background-position: right;
-	}
-	.section_hero_heroes {
-		background-position: 75%;
-	}
-}
 @media (max-width: 800px) {
 	h2 {
 		font-size: 32px;
 	}
 	.title_hero {
 		font-size: 48px;
-	}
-	.section {
-		margin: 20px 40px 0 40px;
 	}
 	.title {
 		margin-bottom: 20px;

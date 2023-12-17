@@ -32,6 +32,7 @@
     gap: 80px;
     margin: 0 auto;
     &__item {
+        transition: 250ms ease-in;
         padding: 15px 0 15px 0;
         &:hover{
             color: $main-color;
