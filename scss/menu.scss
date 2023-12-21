@@ -88,10 +88,13 @@ header{
         background-color: transparent;
     }
     &_close{
-        position: absolute;
+        position: fixed;
         top: 25px;
         right: 35px;  
-        z-index: 9999;          
+        z-index: 9999;   
+        @media (max-width:350px){
+            right: 25px;
+        }       
     }
     &_opened{
         &::before{

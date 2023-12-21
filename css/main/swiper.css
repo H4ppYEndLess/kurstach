@@ -57,7 +57,6 @@
 .swiper-pagination-bullet-active {
 	background-color: #ed6516 !important;
 }
-
 @media (max-width: 1340px) {
 	.swiper {
 		max-width: 900px;
@@ -138,6 +137,6 @@
 }
 @media (max-width: 600px) {
 	.slider {
-		max-width: 250px;
+		max-width: calc(90vw - 40px);
 	}
 }

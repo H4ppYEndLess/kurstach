@@ -50,6 +50,9 @@
 
         }
     }
+    &-button{
+        &-next{}
+    }
 }
 @media (max-width:1340px){
     .swiper{
@@ -144,6 +147,6 @@
 }
 @media (max-width:600px){
     .slider{
-        max-width: 250px;
+        max-width: calc(90vw - 40px);
     }
 }
