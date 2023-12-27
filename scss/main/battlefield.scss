@@ -1,0 +1,35 @@
+.battlefield {
+    text-align: center;
+    padding: 50px 0;
+    // .slider{
+    //     width: 100% !important;
+    //     max-width: unset !important;
+    // }
+}
+.content {
+    font-size: 32px;
+    letter-spacing: 3.84px;
+    &_battlefield {
+        max-width: 1000px;
+        @media (max-width:1200px){
+            font-size: 28px;
+            letter-spacing:normal;
+        }
+        @media (max-width:420px){
+            font-size: 22px;
+            letter-spacing:normal;
+        }
+    }
+    @media (max-width:1200px){
+        font-size: 28px;
+        letter-spacing:normal;
+    }
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: $main-color !important;
+    transition: 250ms ease-in;
+    &:hover{
+        color: $hover-color !important;
+    }
+}

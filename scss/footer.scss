@@ -1,0 +1,91 @@
+@import './variebles.scss';
+@import './mixin.scss';
+
+.socials {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    &__item {
+        position: relative;
+        &:hover::before{
+            content: "";
+            position: absolute;
+            bottom: 0px;         
+            left: 0px;
+            width: 100%;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $main-color;
+        }
+
+    }
+
+    &__icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+.subscription {
+    &__form{
+        display: flex;
+        gap: 5px;
+    }
+
+    &__input {
+        height: 50px;
+        width: 300px;
+        max-width: 350px;
+        border: 1px solid $complementary-color;
+        background-color: $soft-blue;
+        outline: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        font-size: 32px;
+        font-family: over;
+        color:white;
+        &::placeholder{
+            color: $background-color;
+            font-size: 32px;
+            font-family: over;
+        }
+    }
+}
+footer{
+    padding: 50px 80px;
+    background: $footer-gradient;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width:1200px){
+    footer{
+        justify-content: center;
+        gap: 20px;
+        .connection{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width:480px){
+    .maling{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .subscription{
+        &__form{
+            flex-direction: column;
+        }
+        &__input{
+            width: 100%;
+        }
+    }
+}
+

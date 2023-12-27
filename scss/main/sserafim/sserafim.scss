@@ -1,0 +1,75 @@
+.sserafim {
+    &_first {
+        display: flex;
+        gap: 50px;
+        padding: 50px 0;
+        @media (max-width:1250px){
+            display: flex;
+        }
+        @media (max-width:800px){
+            flex-direction: column;
+        }
+    }
+    &_second {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        @media (max-width:1250px){
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__player {
+        &_first {
+            width: 100%;
+            height: 100%;
+            align-self: center;
+            display: flex;
+            @media (max-width:800px){
+                margin-bottom: 15px;
+            }
+        }
+
+        &_second {
+            margin: 30px 0;  
+            width: 100%;
+            height: 600px;
+            @media (max-width:1100px){
+                height: 500px;
+            }
+            @media (max-width:800px){
+                height: 400px;
+            }
+            @media (max-width:600px){
+                height: 250px;
+            }
+            @media (max-width:450px){
+                height: 200px;
+            }
+        }
+    }
+    &__content {
+        max-width: 50%;
+        @media (max-width:1250px){
+            font-size: 24px;
+        }  
+        @media (max-width:800px){
+            font-size: 16px;
+            max-width: 100%;
+        }  
+        @media (max-width:800px){
+            font-size: 24px;
+        }          
+        @media (max-width:380px){
+            & p{
+                display: none;
+            }     
+        }
+    }
+}
+iframe{
+    border-radius: 30px;
+    overflow: hidden;
+}

@@ -1,0 +1,30 @@
+.battlefield {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.content {
+	font-size: 32px;
+	letter-spacing: 3.84px;
+}
+.content_battlefield {
+	max-width: 1000px;
+}
+@media (max-width: 1200px) {
+	.content_battlefield {
+		font-size: 28px;
+		letter-spacing: normal;
+	}
+}
+@media (max-width: 420px) {
+	.content_battlefield {
+		font-size: 22px;
+		letter-spacing: normal;
+	}
+}
+@media (max-width: 1200px) {
+	.content {
+		font-size: 28px;
+		letter-spacing: normal;
+	}
+}
